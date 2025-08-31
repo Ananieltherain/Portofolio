@@ -26,7 +26,14 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 1.2rem;
-    padding: 0.2rem;
+    padding: 0.2rem 7%;
+    background-color: rgba(0, 0, 0, 0.1); /* Transparansi background navbar */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+
 }
 
 .navbar .logo {
@@ -34,6 +41,7 @@ body {
     color: var(--dark-primarry);
     font-size: 2rem;
     transition: 0.2s ease-in-out;
+    font-style: italic;
 }
 
 .navbar .logo:hover {
@@ -58,24 +66,32 @@ body {
     transform: scale(1.2);
 }
 
-/* .navbar .navbar-nav a:hover::after {
-    color: #78A083;
-
-} */
- /* .navbar .logo {
+.navbar .navbar-extra a{
+    color: var(--primarry-textcolor);
+    margin: 0 0.5rem;
     display: inline-block;
-    color: var(--dark-soft);
-    font-size: 2rem;
-    transform: rotateY(100deg); 
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
+    -webkit-transition: 0.1s ease-in-out;
+    -moz-transition: 0.1s ease-in-out;
+    -ms-transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
 }
 
-.navbar .logo:hover {
-    transform: perspective(20rem) rotateY(25deg) scale(1.2); */
+.navbar .navbar-extra a:hover {
+    color: var(--picker-text);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
 
+#hamburger-menu {
+    display: none;
+}
 
 .main-content {
-    background-image: url('assets/portofolio.png');
+    background-image: url('/my_first_web/assets/portofolio.png');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -84,7 +100,6 @@ body {
 }
 
 .content2 {
-    background-image: url('assets/portofolio.png');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -143,15 +158,69 @@ body {
     margin-top: 16px;
     color: #fff
 }
-/* @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+
+.card-content .btn:hover{
+    background-color: var(--dark-picker);
+    color: var(--primarry-textcolor);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/* media queries */
+/* responsive break points */
+/* laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+
+/* tablet */
+@media (max-width: 758px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #hamburger-menu{
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: rgba(0, 0, 0, 0.1);
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+}
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a{
+    color: var(--primarry-textcolor);
     display: block;
-    margin-bottom: 20px;
-  }
-} */
+    margin: 2rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    }  
+} 
 
 
+/* mobile phone */
 
-
-
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+} 
