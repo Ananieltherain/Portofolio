@@ -75,7 +75,7 @@ body {
 
 
 .main-content {
-    background-image: url('/my_first_web/assets/portofolio.png');
+    background-image: url('/assets/portofolio.png');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -84,7 +84,7 @@ body {
 }
 
 .content2 {
-    background-image: url('/my_first_web/assets/portofolio.mp4');
+    background-image: url('/assets/portofolio.mp4');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -150,4 +150,5 @@ body {
     margin-bottom: 20px;
   }
 } */
+
 
