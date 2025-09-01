@@ -91,7 +91,7 @@ body {
 }
 
 .main-content {
-    background-image: url('assets/portofolio.png');
+    background-image: url('../assets/portofolio.png');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -224,5 +224,6 @@ body {
         font-size: 55%;
     }
 } 
+
 
 
