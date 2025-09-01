@@ -19,3 +19,5 @@ document.addEventListener('click', function(e) {
         navbarNav.classList.remove('active');
     }
 });
+
+//web ini belum selesai
